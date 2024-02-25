@@ -4,11 +4,18 @@ import Link from 'next/link'
 import React from 'react'
 
 const MarqueeSection = () => {
+  interface MarqueeProps {
+    behavior?: 'scroll' | 'slide' | 'alternate'; // Specify the allowed values for the behavior attribute
+    direction?: 'up' | 'down' | 'left' | 'right'; // Specify the allowed values for the direction attribute
+    scrollamount?: number;
+    className?: string;
+    children?: ReactNode; // ReactNode is used to allow any valid React child element
+  }
   return (
     <div className="m-2 md:flex max-w-7xl mx-auto my-8 bg-gray-300 dark:bg-muted rounded-lg ">
     <div className="flex-1">
       <h2 className="text-4xl font-bold mb-4 underline">Upcoming News</h2>
-      <marquee behavior="scroll" className="space-y-8" direction="up" scrollamount="4" >
+      <div className='container'>
         {
             paragraphs.map((para)=>{
                 return <div className='flex p-2'>
@@ -17,9 +24,7 @@ const MarqueeSection = () => {
                 </div>
             })
         }
-        
-
-      </marquee>
+      </div>
     </div>
 
 
