@@ -10,7 +10,7 @@ interface MarqueeProps {
 }
 
 const Marquee: React.FC<MarqueeProps> = ({
-  behavior = 'scroll',
+  
   direction = 'up',
   scrollamount = 4,
   className = '',
