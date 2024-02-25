@@ -1,6 +1,6 @@
 import React from 'react'
 
-const MenuIcon = (props) => {
+const MenuIcon = (props:any) => {
         return (
           <svg
             {...props}
