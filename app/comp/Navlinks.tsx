@@ -38,7 +38,11 @@ const Navlinks = () => {
                      <DropdownMenuContent side={'bottom'} align={'start'}>
                      {
                       facilities.map((item)=>(
-                        <DropdownMenuItem key={item.key}>{item.label}</DropdownMenuItem>
+                        <DropdownMenuItem key={item.key}>
+                          <Link href={`${item.href}`}>
+                          {item.label}
+                          </Link>
+                          </DropdownMenuItem>
                       
                       ))
                     }

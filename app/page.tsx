@@ -15,7 +15,7 @@ const page = () => {
     <div className='-mt-[30%] lg:flex lg:flex-auto gap-5 lg:-mt-[40%] lg:z-40 lg:absolute  '>
     {
       CardHomeItems.map((item) => (
-        <CardsHome key={item.name} name={item.name}  description={item.description} />
+        <CardsHome key={item.name} name={item.name} href={item.href}  description={item.description} />
       ))
     }
     </div>
