@@ -2,8 +2,8 @@
 import React from 'react'
 import Logo from './Logo'
 import Navlinks from './Navlinks'
-import { Button } from '@/components/ui/button'
-import MenuIcon from './MenuIcon'
+
+
 import { ModeToggle } from '@/components/ui/toggle'
 
 import MobNav from './MobNav'
@@ -18,6 +18,7 @@ const Navbar = () => {
         <Navlinks/>
         </div>
         <div className='lg:hidden flex mt-4 gap-3 mx-3'>
+         
           <ModeToggle/>
          <MobNav/> 
         </div>
