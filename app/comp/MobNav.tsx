@@ -3,8 +3,8 @@
 import { MenuIcon} from 'lucide-react'
 import {
     Sheet,
+    SheetClose,
     SheetContent,
-    SheetDescription,
     SheetHeader,
     SheetTitle,
     SheetTrigger,
@@ -13,12 +13,14 @@ import {
 import React from 'react'
 import Logo from './Logo'
 import { NavLinkss } from '@/constants'
+import Link from 'next/link'
+import { Button } from '@/components/ui/button'
 
 const MobNav = () => {
   return (
     <div>
         <Sheet >
-        <SheetTrigger>
+        <SheetTrigger asChild >
        <MenuIcon className="w-6 h-6" />
               </SheetTrigger>
               <SheetContent side={'left'} className='bg-card'>
@@ -27,11 +29,21 @@ const MobNav = () => {
       
     </SheetHeader>
     {
-        NavLinkss.map((link)=>{
-            return (
-                <button className='text-lg w-full text-left p-2 hover:bg-primary hover:text-background' key={link.key}>{link.name}</button>
-            )
-        })
+      NavLinkss.map((link)=>{
+        return (
+          <SheetClose asChild>
+  <Link key={link.name} href={link.route} className='flex text-lg font-sans  p-6 w-full  justify-center bg-card text-primary hover:text-orange-500'>
+
+<Button className='rounded-xl w-full p-5 hover:text-orange-500' variant={'ghost'}>
+{link.name}
+</Button></Link>
+
+          </SheetClose>
+        
+
+
+          )
+      })
     }
   </SheetContent>
         </Sheet>

@@ -1,21 +1,13 @@
 export const departments = [
-    { key: 'aiAndML', href: '/departments/AI&ML', label: 'Artificial Intelligence and Machine Learning' },
-    { key: 'civilEngineering', href: '#', label: 'Civil Engineering' },
-    { key: 'computerEngineering', href: '#', label: 'Computer Engineering' },
-    { key: 'ece', href: '#', label: 'Electronics & Communication Engineering' },
-    { key: 'eee', href: '#', label: 'Electrical and Electronics Engineering' },
-    { key: 'mechanicalEngineering', href: '#', label: 'Mechanical Engineering' },
+    { key: 'aiAndML', href: '/departments/AI&ML', label: 'Artificial Intelligence and Machine Learning',dept:'/assets/Depts/aiml.png' },
+    { key: 'civilEngineering', href: '/departments/CIVIL', label: 'Civil Engineering',dept:'/assets/Depts/civil.jpg' },
+    { key: 'computerEngineering', href: '/departments/CSE', label: 'Computer Engineering',dept:'/assets/Depts/cse.jpg' },
+    { key: 'ece', href: '/departments/ECE', label: 'Electronics & Communication Engineering',dept:'/assets/Depts/ece.jpg' },
+    { key: 'eee', href: '/departments/EEE', label: 'Electrical and Electronics Engineering',dept:'/assets/Depts/eee.jpg' },
+    { key: 'MECH', href: '/departments/MECH', label: 'Mechanical Engineering',dept:'/assets/Depts/mech.jpg' },
   ];
   
-  export const about = [
-    { key: 'aboutUs', href: '#', label: 'About Us' },
-    { key: 'history', href: '#', label: 'History' },
-    { key: 'management', href: '#', label: 'Management' },
-    { key: 'awards', href: '#', label: 'Award and Honours' },
-    { key: 'distinctions', href: '#', label: 'Distinctions' },
-    { key: 'events', href: '#', label: 'Events' },
-    { key: 'lms', href: '#', label: 'LMS' },
-  ];
+ 
   
   export const achievements = [
     { key: 'bankRankers', href: '#', label: 'Branch Rankers' },

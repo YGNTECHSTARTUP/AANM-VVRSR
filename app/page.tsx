@@ -7,7 +7,7 @@ import MarqueeSection from './comp/MarqueeSection'
 import CampusCarousel from './comp/CampusCarousel'
 import VideoComp from './comp/VideoComp'
 import { CarouselSize } from './comp/CarouselSize'
-import { Footer } from './comp/Footer'
+import Footer from './comp/Footer'
 const page = () => {
   return (
     <div className='flex-col lg:z-0 lg:absolute overflow-hidden '>
