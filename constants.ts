@@ -18,6 +18,7 @@ interface NavLink {
     name: string;
     description: string;
     imgurl?: string;
+    href:string
   }
   export const NavLinkss: NavLink[] = [
     { key: 1, name: "HOME", route: "/" },
@@ -159,6 +160,7 @@ export const MECH_DEPARTMENT: dept = {
   interface CarouselItems{
     id:number;
     carouselimg:string;
+    
   }
   export const CarouselItems:CarouselItems[] = [
     {
@@ -183,19 +185,19 @@ export const MECH_DEPARTMENT: dept = {
   {
     key: '1',
     name: 'Distinction',
-    
+    href:"https://www.aanm-vvrsrpolytechnic.ac.in/distinctions.php",
     description: 'The polytechnic is the only institution with the highest intake of 1260+EWS 126 (Total 1386) among all the government and private Polytechnics.',
   },
   {
     key: '2',
     name: 'State Rankers',
-  
+    href:"https://www.aanm-vvrsrpolytechnic.ac.in/state-rankers.php",
     description: 'The polytechnic students achieved 14 state ranks till 2017 since 2009, 7 state first ranks, 1 state rank (Private poly), 6 state second ranks (Private poly)',
   },
   {
     key: '3',
     name: 'Placements',
-
+    href:"https://www.aanm-vvrsrpolytechnic.ac.in/placements.php",
     description: 'The employment opportunities for the I Class Diploma pass outs have been quite encouraging but only 30%',
   },
 ];

@@ -1,3 +1,4 @@
+
 import React from 'react'
 import {
     Card,
@@ -8,14 +9,17 @@ import {
     CardTitle,
   } from "@/components/ui/card";
 import { LibraryBig,Globe2,Award,MoveRight} from 'lucide-react';
+
+import Link from 'next/link';
   interface CardsHomeProps {
     name: string;
     description: string;
+    href:string;
   }
   
-  const CardsHome: React.FC<CardsHomeProps> = ({ name, description }) => {
+  const CardsHome: React.FC<CardsHomeProps> = ({ name, description,href }) => {
     return (
-      <Card className='rounded-lg border-2 border-primary p-2 m-4 max-w-[80%] lg:max-w-[50%] mx-auto bg-card hover:bg-muted cursor-pointer lg:opacity-80 '>
+<Card className='rounded-lg border-2 border-primary p-2 m-4 max-w-[80%] lg:max-w-[50%] mx-auto bg-card hover:bg-muted cursor-pointer lg:opacity-80 '>
           <CardHeader className='flex-row '>
             <div>
             {name==='Distinction' && <LibraryBig height={40} width={40} /> ||
@@ -30,8 +34,12 @@ import { LibraryBig,Globe2,Award,MoveRight} from 'lucide-react';
             <CardDescription className='text-muted-foreground'>{description}</CardDescription>
 
           </CardContent>
-          <CardFooter className='cursor-pointer underline underline-offset-1'>ReadMore<MoveRight/></CardFooter>
+          <CardFooter className='cursor-pointer underline underline-offset-1'>
+            <Link href={href} > ReadMore</Link>
+           <MoveRight/></CardFooter>
       </Card>
+      
+      
     )
   }
   

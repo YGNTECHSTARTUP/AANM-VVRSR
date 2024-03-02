@@ -10,6 +10,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 export const metadata: Metadata = {
   title: "AANM & VVRSR Polytechnic",
   description: "Best Polytechnic in Andhra Pradesh",
+  
 };
 
 export default function RootLayout({
@@ -18,7 +19,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en"  className={`${GeistSans.variable} ${GeistMono.variable}`}>
+    <html lang="en"   className={`${GeistSans.variable} ${GeistMono.variable}`}>
       <body className="font-sans">
       <ThemeProvider
             attribute="class"

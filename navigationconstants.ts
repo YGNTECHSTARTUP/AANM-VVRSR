@@ -27,10 +27,10 @@ export const departments = [
   ];
   
   export const facilities = [
-    { key: 'hostel', href: '#', label: 'Hostel' },
-    { key: 'library', href: '#', label: 'Library' },
-    { key: 'cafeteria', href: '#', label: 'Cafeteria' },
-    { key: 'sports', href: '#', label: 'Sports' },
+    { key: 'hostel', href: 'facilities/hostel', label: 'Hostel' },
+    { key: 'library', href: '/facilities/library', label: 'Library' },
+    { key: 'cafeteria', href: '/facilities/cafteria', label: 'Cafeteria' },
+    { key: 'sports', href: '/facilities/sports', label: 'Sports' },
   ];
   
   // Similar structures for other sections...
