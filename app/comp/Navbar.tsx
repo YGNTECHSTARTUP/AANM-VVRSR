@@ -11,14 +11,14 @@ import MobNav from './MobNav'
 const Navbar = () => {
   return (
     
- <div className='flex bg-background h-16 gap-2 border-b-primary border-2 justify-between sticky top-0 z-50 lg:fixed lg:w-full lg:top-0 lg:z-50'>
+ <div className='flex bg-background h-20 gap-2 border-b-primary border-2 justify-between sticky top-0 z-50 lg:fixed lg:w-full lg:top-0 lg:z-50'>
       <div>
       <Logo/>
       </div>
-        <div className='hidden lg:flex  ' >
+        <div className='hidden er:flex  ' >
         <Navlinks/>
         </div>
-        <div className='lg:hidden flex mt-4 gap-3 mx-3'>
+        <div className='er:hidden flex mt-4 gap-3 mx-3'>
          
           <ModeToggle/>
          <MobNav/> 

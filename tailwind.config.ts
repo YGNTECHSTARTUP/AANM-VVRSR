@@ -17,10 +17,14 @@ const config = {
         "2xl": "1400px",
       },
     },
+ 
     extend: {
       fontFamily: {
         sans: ['var(--font-geist-sans)'],
         mono: ['var(--font-geist-mono)'],
+      },
+      screens: {
+        "er":"1173px",
       },
       colors: {
         border: "hsl(var(--border))",

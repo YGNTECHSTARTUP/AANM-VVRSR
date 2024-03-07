@@ -8,14 +8,14 @@ import { BackgroundGradient } from '@/components/ui/background-gradient'
 
 const page = () => {
   return (
-    <div className='grid mt-12 gap-4  md:grid-cols-2 lg:grid-cols-3  justify-center container '>
+    <div className='grid mt-36 gap-6  md:grid-cols-2 lg:grid-cols-3  justify-center container '>
 {
     departments.map((dept)=>{
         return (
 
           <Link key={dept.key} href={dept.href}>
-            <BackgroundGradient className="rounded-[22px] max-w-sm p-4 sm:p-10 bg-white dark:bg-zinc-900">
-            <Card  className='bg-card text-card-foreground  m-5  '>
+            <BackgroundGradient className="rounded-[10%] max-w-md -p-[5%]  bg-white dark:bg-zinc-900">
+            <Card  className='bg-card text-card-foreground   '>
             <CardHeader>
             <CardTitle>{dept.label}</CardTitle>
             </CardHeader>

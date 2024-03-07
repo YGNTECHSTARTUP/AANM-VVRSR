@@ -275,6 +275,23 @@ interface campusCarouselItems{
   imgurl:string,
   name:string
 }
+interface aboutdatas{
+  id:number,
+  content:string
+
+}
+export const aboutdata:aboutdatas[] = [{
+  id:1,
+  content:" A.A.N.M & V.V.R.S.R Polytechnic was established in 1981 by Adsumilli Aswardha narayana Murthy and Valluripalli Venkata rama Seshadri rao Educational Society. In affilication to AP state board of Technical Education and Training, Hyderabad."
+},
+{
+  id:2,
+  content:"The Polytechnic could achieve 45 STATE RANKS in engineering Diploma examnination till 2015 from which year the state goverment abolished the declaration of state ranks"
+},
+{
+  id:3,
+  content:"        The Polytechnic was approved by AICTE. The Polytechnic was the Second Self Financing instutution in the state of Andhra Pradesh and the first of its kind in Krishna distrcit.<br/>"
+}]
 export const campusCarouselItems:campusCarouselItems[] = [
   {
     id:1,
