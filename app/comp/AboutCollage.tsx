@@ -5,6 +5,7 @@ import { GraduationCap,MoveRight  } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import Image from 'next/image';
 import Link from 'next/link';
+import { aboutdata } from '@/constants';
 interface keys {
   keys?: string
 }
@@ -38,23 +39,17 @@ const AboutCollage:React.FC<keys> = ({keys}) => {
         <h1 className='text-3xl font-sans font-bold -mx-[20%] md:-mx-[56%] '>  <TypewriterEffect words={words} /></h1>
         <br></br>
         <ul className='decoration-primary list-disc basis-[70% ]'>
-        <li>
-        <p className='text-card-foreground font-normal font-sans text-xl  '>
-        A.A.N.M & V.V.R.S.R Polytechnic was established in 1981 by Adsumilli Aswardha narayana Murthy and Valluripalli Venkata rama Seshadri rao Educational Society. In affilication to AP state board of Technical Education and Training, Hyderabad.
-        </p>
-        </li>
-       <li>
-        <p className='text-card-foreground font-normal font-sans text-md'>
-The Polytechnic could achieve 45 STATE RANKS in engineering Diploma examnination till 2015 from which year the state goverment abolished the declaration of state ranks.
-        </p>
-       </li>
-       <li>
-       <p className='text-card-foreground font-normal font-sans text-md'>
-        The Polytechnic was approved by AICTE. The Polytechnic was the Second Self Financing instutution in the state of Andhra Pradesh and the first of its kind in Krishna distrcit.<br/>
-
-        </p>
-       </li>
-      
+          {
+            aboutdata.map((data)=>{
+              return <li key={data.id}>
+              <h1 className='text-card-foreground font-normal font-sans text-xl  '>
+                {data.content}
+              </h1>
+              </li>
+            })
+          }
+        
+       
         </ul>
         <Link href='/about'>
         {

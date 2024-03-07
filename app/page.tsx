@@ -22,9 +22,9 @@ const page = () => {
     </div>
    <AboutCollage/>
    <MarqueeSection/>
-   <div>
-      <h1 className='text-center text-2xl font-bold text-orange-500'>On Going Campus Life</h1>
-      <h1 className='text-center text-4xl font-bold'>Get The Best Campus Life</h1>
+   <div className='text-primary'>
+      <h1 className='text-center text-2xl font-extrabold  '>On Going Campus Life</h1>
+      <h1 className='text-center text-4xl font-bold text-muted-foreground '>Get The Best Campus Life</h1>
    </div>
     
    <br/>

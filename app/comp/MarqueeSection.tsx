@@ -32,10 +32,12 @@ const MarqueeSection = () => {
         education in the field of Diploma Engineering that has the potential to produce competent human resource to
         cater the Industrial and Societal needs.
       </p>
-      <h2 className="text-4xl font-bold mb-4 underline flex"><Goal  height={35} width={35}/>Our Mission</h2>
+      <h1 className="text-4xl font-bold mb-4 underline flex"><Goal  height={35} width={35}/>Our Mission</h1>
      {
          Mission.map((mission)=>{
-            return <li key={mission.id}>{mission.content}</li>
+            return  <ul key={mission.id}>
+              <li >{mission.content}</li>
+              </ul>
          })
      }
     </div>

@@ -34,7 +34,7 @@ const MobNav = () => {
           <SheetClose asChild>
   <Link key={link.name} href={link.route} className='flex text-lg font-sans  p-6 w-full  justify-center bg-card text-primary hover:text-orange-500'>
 
-<Button className='rounded-xl w-full p-5 hover:text-orange-500' variant={'ghost'}>
+<Button className='rounded-xl w-full p-5 hover:text-orange-500 bg-muted hover:bg-primary' variant={'ghost'}>
 {link.name}
 </Button></Link>
 
