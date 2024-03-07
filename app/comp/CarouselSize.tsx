@@ -24,7 +24,7 @@ export function CarouselSize() {
       opts={{
         align: "start",
       }}
-      className="w-[100%] p-[10%] mx-auto flex justify-center overflow-hidden"
+      className="w-[100%] p-[10%] -mt-[6%] mx-auto flex justify-center overflow-hidden"
     >
       <CarouselContent>
         {Companies.map((company) => (

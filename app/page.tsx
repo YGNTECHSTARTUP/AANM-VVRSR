@@ -8,6 +8,7 @@ import CampusCarousel from './comp/CampusCarousel'
 import VideoComp from './comp/VideoComp'
 import { CarouselSize } from './comp/CarouselSize'
 import Footer from './comp/Footer'
+
 const page = () => {
   return (
     <div className='flex-col lg:z-0 lg:absolute overflow-hidden '>
@@ -25,11 +26,12 @@ const page = () => {
       <h1 className='text-center text-2xl font-bold text-orange-500'>On Going Campus Life</h1>
       <h1 className='text-center text-4xl font-bold'>Get The Best Campus Life</h1>
    </div>
+    
    <br/>
    <CampusCarousel/>
    <br></br>
    <VideoComp/>
-   <h1 className='text-center text-4xl font-bold text-orange-500'>Our Leading Recruiters</h1>
+   <h1 className='text-center text-4xl font-bold text-orange-500 mt-16 decoration-orange-600 underline underline-offset-5'>Our Leading Recruiters</h1>
    <CarouselSize/>
    <Footer/>
    </div>
