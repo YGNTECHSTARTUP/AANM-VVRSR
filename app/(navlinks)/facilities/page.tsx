@@ -1,6 +1,8 @@
 
 import React from 'react'
-
+import { Metadata } from 'next'
+export const metadata: Metadata = {
+  title:"Sports" }
 import { faciliities } from '@/constants'
 import Cardgroup from '@/app/comp/Cardgroup'
 const page = () => {

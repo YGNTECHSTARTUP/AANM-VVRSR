@@ -1,7 +1,9 @@
 import React from 'react'
 import { AIML_DEPARTMENT } from '@/constants'
 import DeptReusable from '@/app/comp/DeptReusable'
-
+import { Metadata } from 'next'
+export const metadata: Metadata = {
+  title:"AI&ML" }
 const page = () => {
     const {name,hod,mission,imgurl,vision,contact,email,about} = AIML_DEPARTMENT
   return (

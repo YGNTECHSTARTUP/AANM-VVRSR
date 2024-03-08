@@ -2,6 +2,9 @@ import React from 'react'
 import Reusable from '@/app/comp/Reusable'
 import { sportsItems } from '@/constants'
 import CardFac from '@/app/comp/CardFac'
+import { Metadata } from 'next'
+export const metadata: Metadata = {
+  title:"Gallery" }
 const page = () => {
   return (
     <div>

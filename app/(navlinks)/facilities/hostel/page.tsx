@@ -2,6 +2,9 @@ import React from 'react'
 import Reusable from '@/app/comp/Reusable'
 import { HostelItems } from '@/constants'
 import CardFac from '@/app/comp/CardFac'
+import { Metadata } from 'next'
+export const metadata: Metadata = {
+  title:"Hostel" }
 const page = () => {
   
   return (

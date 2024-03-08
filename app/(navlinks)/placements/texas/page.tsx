@@ -1,7 +1,9 @@
 import Reusable from '@/app/comp/Reusable'
 import Image from 'next/image'
 import React from 'react'
-
+import { Metadata } from 'next'
+export const metadata: Metadata = {
+  title:"Texas" }
 const page = () => {
   return (
     <div>
