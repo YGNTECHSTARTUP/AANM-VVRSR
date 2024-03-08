@@ -5,7 +5,7 @@ import "./globals.css";
 import Navbar from "./comp/Navbar";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Analytics } from "@vercel/analytics/react"
-
+import Head from "next/head";
 
 
 export const metadata: Metadata = {
@@ -14,9 +14,11 @@ export const metadata: Metadata = {
     template:"%s - AANM & VVRSR Polytechnic"
   },
   description: "Best Polytechnic in Andhra Pradesh",
+ 
   twitter:{
     card:"summary_large_image",
     site:"@aanm_vvrsr_polytechnic",
+    images:"https://aanm-vvrsr.vercel.app/og.png"
   }
   };
 
