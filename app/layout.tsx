@@ -4,7 +4,7 @@ import { GeistMono } from 'geist/font/mono'
 import "./globals.css";
 import Navbar from "./comp/Navbar";
 import { ThemeProvider } from "@/components/theme-provider";
-
+import { Analytics } from "@vercel/analytics/react"
 
 
 
@@ -14,8 +14,11 @@ export const metadata: Metadata = {
     template:"%s - AANM & VVRSR Polytechnic"
   },
   description: "Best Polytechnic in Andhra Pradesh",
-  
-};
+  twitter:{
+    card:"summary_large_image",
+    site:"@aanm_vvrsr_polytechnic",
+  }
+  };
 
 export default function RootLayout({
   children,
@@ -34,7 +37,7 @@ export default function RootLayout({
           >
 <Navbar/>
         {children}
-
+<Analytics/>
           </ThemeProvider>
 
 
