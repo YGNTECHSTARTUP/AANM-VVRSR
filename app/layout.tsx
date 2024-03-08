@@ -9,7 +9,10 @@ import { ThemeProvider } from "@/components/theme-provider";
 
 
 export const metadata: Metadata = {
-  title: "AANM & VVRSR Polytechnic",
+  title: {
+    default:"AANM & VVRSR Polytechnic",
+    template:"%s - AANM & VVRSR Polytechnic"
+  },
   description: "Best Polytechnic in Andhra Pradesh",
   
 };

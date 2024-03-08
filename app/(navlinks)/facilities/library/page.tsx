@@ -2,6 +2,9 @@ import React from 'react'
 import Reusable from '@/app/comp/Reusable'
 import { LibraryItems } from '@/constants'
 import CardFac from '@/app/comp/CardFac'
+import { Metadata } from 'next'
+export const metadata: Metadata = {
+  title:"Library" }
 const page = () => {
   return (
     <div className=' flex-col justify-center items-center'>

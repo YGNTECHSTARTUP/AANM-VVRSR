@@ -1,7 +1,9 @@
 import React from 'react'
 import { ECE_DEPARTMENT } from '@/constants'
 import DeptReusable from '@/app/comp/DeptReusable'
-
+import { Metadata } from 'next'
+export const metadata: Metadata = {
+  title:"ECE" }
 const page = () => {
     const {name,hod,mission,imgurl,vision,contact,email,about} = ECE_DEPARTMENT
   return (

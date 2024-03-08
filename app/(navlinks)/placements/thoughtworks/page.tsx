@@ -2,7 +2,9 @@ import Reusable from '@/app/comp/Reusable'
 import React from 'react'
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table'
 import Image from 'next/image'
-
+import { Metadata } from 'next'
+export const metadata: Metadata = {
+  title:"Thoughtworks" }
 const page = () => {
   return (
     <div>
