@@ -1,3 +1,5 @@
+import { m } from "framer-motion";
+
 export interface dept{
   name:string;
   about:string;
@@ -7,6 +9,7 @@ export interface dept{
   imgurl:string;
   contact:number;
   email:string;
+  parent:string;
 }
 interface NavLink {
     key: number;
@@ -22,16 +25,172 @@ interface NavLink {
   }
   export const NavLinkss: NavLink[] = [
     { key: 1, name: "HOME", route: "/" },
-    { key: 2, name: "ABOUT", route: "about" },
-    { key: 3, name: "DEPARTMENTS", route: "departments" },
-    { key: 4, name: "FACILITIES", route: "facilities" },
-    { key: 5, name: "PLACEMENTS", route: "placements" },
-    { key: 6, name: "GALLERY", route: "gallery" },
-    { key: 7, name: "ACHIEVEMENTS", route: "achievements" },
-    { key: 8, name: "ALUMNI", route: "alumni" },
-    { key: 9, name: "CONTACT", route: "contact" },
+    { key: 2, name: "ABOUT", route: "/about" },
+    { key: 3, name: "DEPARTMENTS", route: "/departments" },
+    { key: 4, name: "FACILITIES", route: "/facilities" },
+    { key: 5, name: "PLACEMENTS", route: "/placements" },
+    { key: 6, name: "GALLERY", route: "/gallery" },
+    { key: 7, name: "ACHIEVEMENTS", route: "/achievements" },
+    { key: 8, name: "ALUMNI", route: "/alumni" },
+    { key: 9, name: "CONTACT", route: "/contact" },
   ];
+  interface Itmes  {
+    id:number;
+    imgurl:string;
+  }
+  export const achievements: Itmes[] = [
+    {
+      id: 1,
+      imgurl: "/assets/achievement/ach1.jpg",
+    },
+    {
+      id: 6,
+      imgurl: "/assets/achievement/ach6.jpg",
+    },
+    {
+      id: 7,
+      imgurl: "/assets/achievement/ach7.jpg",
+    },
+    {
+      id: 2,
+      imgurl: "/assets/achievement/ach2.jpg",
+    },
+    {
+      id: 3,
+      imgurl: "/assets/achievement/ach3.jpg",
+    },
+    {
+      id: 9,
+      imgurl: "/assets/achievement/ach9.jpg",
+    },
+    {
+      id: 4,
+      imgurl: "/assets/achievement/ach4.jpg",
+    },
+    {
+      id: 5,
+      imgurl: "/assets/achievement/ach5.jpg",
+    },
+   
+   
+    {
+      id: 8,
+      imgurl: "/assets/achievement/ach8.jpg",
+    },
  
+  ];
+  
+ export const LibraryItems:Itmes[] = [
+  {
+    id:1,
+    imgurl:"/assets/library/library1.jpg",
+  },
+  {
+    id:2,
+    imgurl:"/assets/library/library2.jpg",
+  },
+  {
+    id:3,
+    imgurl:"/assets/library/library3.jpg",
+  },
+  {
+    id:4,
+    imgurl:"/assets/library/library4.jpg",
+  },
+  {
+    id:5,
+    imgurl:"/assets/library/library5.jpg",
+  }
+ ]
+ export const HostelItems:Itmes[] = [
+  {
+    id:1,
+    imgurl:"/assets/hostel/hostel1.jpg",
+  },
+  {
+    id:2,
+    imgurl:"/assets/hostel/hostel2.jpg",
+  },
+  {
+    id:3,
+    imgurl:"/assets/hostel/hostel3.jpg",
+  }
+  
+ ]
+ export const sportsItems:Itmes[] = [
+  {
+    id:1,
+    imgurl:"/assets/sports/sports1.jpg",
+  },
+  {
+    id:2,
+    imgurl:"/assets/sports/sports2.jpg",
+  },
+  {
+    id:3,
+    imgurl:"/assets/sports/sports3.jpg",
+  },
+  {
+    id:4,
+    imgurl:"/assets/sports/sports4.jpg",
+  
+  },
+  {
+    id:5,
+    imgurl:"/assets/sports/sports5.jpg",
+  
+  },
+  {
+    id:6,
+    imgurl:"/assets/sports/sports6.jpg",
+  
+  },
+  {
+    id:7,
+    imgurl:"/assets/sports/sports7.jpg",
+  
+  },
+  {
+    id:8,
+    imgurl:"/assets/sports/sports8.jpg",
+  
+  
+  },
+  {
+    id:9,
+    imgurl:"/assets/sports/sports9.jpg",
+  
+  
+  },
+  {
+    id:10,
+    imgurl:"/assets/sports/sports10.jpg",
+  
+  
+  },
+  {
+    id:11,
+    imgurl:"/assets/sports/sports11.jpg",
+  
+  
+  },
+  {
+   id:12,
+   imgurl:"/assets/sports/sports12.jpg", 
+  },
+  {
+    id:13,
+    imgurl:"/assets/sports/sports13.jpg",
+  },
+  {
+    id:14,
+    imgurl:"/assets/sports/sports14.jpg",
+  },
+  {
+    id:15,
+    imgurl:"/assets/sports/sports15.jpg",
+  }
+ ]
   export const AIML_DEPARTMENT:dept = {
     name: 'Artificial Intelligence and Machine Learning',
     about:"Artificial Intelligence and machine Learning (AI&ML) is a new, emerging field which consists of a set of tools and techniques used to extract useful information from data. AI&ML is a fast growing discipline and is full of rigorous practical analysis. The demand for undergraduates in AI and ML has industry required skills and demand in the Global market over the last few years. Artificial Intelligence and Machine Learning is also in line demand with computer science. Machine learning is an established research discipline. However, recent advances have increased the impact on many areas of society, science, medicine, and everyday life.AI with ML is in demand in the robotics applications, space technology, industry4.0 and many more.AI and ML delivers modern computational systems that demonstrate capabilities of perception, reasoning, learning and action that are typical of human intelligence. B.Tech. Artificial Intelligence and Machine Learning programme emerging area is start, in our College, from the academic year 2021– 22 with a vision to emerge as a premier center for education and research in Artificial Intelligence and Machine Learning and in transforming students into innovative professionals of contemporary and future technologies to cater the global needs of human resources. AI and ML course aims to indulge knowledge in not only the core technologies such as artificial intelligence, data mining and data modelling and also make ready students expertise in thrust areas such as machine learning, and deep learning. Students with this course can gain thorough knowledge in: Intelligent Systems, Machine Learning, Deep Learning, Reinforcement Learning, Natural Language Processing, and Technologies for machine learning with cloud computing, big data analytics Reasoning, Internet of Things, Statistical Learning and visualization skills. The goal of artificial intelligence (AI) and machine learning is to program computers to use example data or experience to solve a given problem. Many successful applications based on machine learning exist already, including systems that analyse past sales data to predict customer behaviour (financial management), recognize faces or spoken speech, optimize robot behaviour so that a task can be completed using minimum resources, and extract knowledge from bioinformatics data.",
@@ -47,6 +206,7 @@ interface NavLink {
     contact: 9988776655,
     email:"aanm&vvrsr-aiml@gec.com",
     imgurl: '/assets/Depts/aiml.png',
+    parent:"/departments"
   };
   // constant.ts
 
@@ -66,12 +226,13 @@ export const CIVIL_DEPARTMENT:dept = {
   contact: 9988776655,
   email: "aanm-vvrsr-civil@gec.com",
   imgurl: '/assets/Depts/civil.jpg',
+  parent:"/departments"
 };
 // constant.ts
 
 export const CSE_DEPARTMENT: dept = {
   name: 'Computer Science and Engineering',
-
+  parent:"/departments",
   vision:
     'To be a leading center for education and research in Computer Science and Engineering, fostering students to excel as innovative professionals in contemporary and future technologies, addressing global needs in the IT and software industry.',
   mission: [
@@ -108,6 +269,7 @@ export const ECE_DEPARTMENT: dept = {
   contact: 9988776655,
   email: "aanm-vvrsr-ece@gec.com",
   imgurl: '/assets/Depts/ece.jpg',
+  parent:"/departments"
 };
 
 // You can use this template and customize the values for other departments as needed.
@@ -128,6 +290,7 @@ export const EEE_DEPARTMENT: dept = {
   contact: 9988776655,
   email: "aanm-vvrsr-eee@gec.com",
   imgurl: '/assets/Depts/eee.jpg',
+  parent:"/departments",
 about:"Electrical and Electronics Engineering (EEE) is the driving force behind the electrification of the world and the development of electronic devices that permeate every aspect of our lives. Our B.Tech. Electrical and Electronics Engineering program, launched in the academic year 2021–22, delves into the heart of this expansive field, equipping students with the skills and knowledge to power the future.Students in our program engage in a comprehensive curriculum that spans power systems, control systems, electronics, and renewable energy technologies. Theoretical concepts are complemented by hands-on experiences in well-equipped laboratories. This combination ensures that graduates are not only well-versed in the principles of electrical and electronics engineering but are also adept at applying these principles to real-world scenarios.A unique aspect of our program is its emphasis on interdisciplinary collaboration. Students have the opportunity to work on projects that intersect with other engineering disciplines, fostering a holistic understanding of technological applications. This approach mirrors the interconnected nature of modern engineering challenges, where solutions often require a convergence of diverse perspectives.The program's commitment to practical application extends to internships and industry projects, where students collaborate with established companies to solve real-world problems. This exposure to industry practices ensures that graduates are not just theoretically grounded but are also familiar with the demands and expectations of the professional realm.Beyond technical skills, the B.Tech. Electrical and Electronics Engineering program prioritizes the development of critical thinking, problem-solving, and ethical considerations. Students are encouraged to explore the societal implications of electrical and electronics technologies, considering factors such as sustainability, energy efficiency, and accessibility.Graduates from our program emerge as forward-thinking professionals, ready to contribute to the advancements in energy systems, electronics, and sustainable technologies. They are prepared not only to meet the challenges of today but also to anticipate and address the complex engineering challenges of the future."
 };
 
@@ -149,6 +312,7 @@ export const MECH_DEPARTMENT: dept = {
   contact: 9988776655,
   email: "aanm-vvrsr-mech@gec.com",
   imgurl: '/assets/Depts/mech.jpg',
+  parent:"/departments",
   about:"Mechanical Engineering is the heartbeat of industrial evolution, propelling innovation, and steering the development of machines and systems that define our modern world. At the core of our academic offerings, the B.Tech. Mechanical Engineering program, launched in the academic year 2021–22, embarks on a journey to empower students with the skills and knowledge that will drive the future of mechanical systems.Comprehensive Curriculum: Unveiling the Dynamics of Mechanical EngineeringIn the pursuit of excellence, our program unfolds a comprehensive curriculum that navigates through the intricacies of various mechanical engineering disciplines. Students dive deep into subjects such as thermodynamics, fluid mechanics, materials science, and robotics. This knowledge foundation is further enhanced by practical applications, including computer-aided design (CAD) and finite element analysis (FEA), ensuring that graduates are well-versed in both theoretical principles and practical implementation.The program recognizes the pivotal role of robotics and automation in the contemporary engineering landscape. Students are exposed to cutting-edge developments in these fields, preparing them to design and control robotic systems that are integral to modern manufacturing processes.Hands-On Learning: Bridging Theory and PracticeAt the heart of our Mechanical Engineering program lies a commitment to hands-on learning. Our well-equipped laboratories provide students with the platform to conduct experiments, engage in real-world projects, and gain practical insights into the complexities of mechanical systems. This hands-on approach ensures that graduates not only comprehend theoretical concepts but are also adept at applying their knowledge to solve real-world engineering challenges.Interdisciplinary Collaboration: Fostering a Holistic Engineering Perspective"
 
 };
@@ -162,6 +326,7 @@ export const MECH_DEPARTMENT: dept = {
     carouselimg:string;
     
   }
+  
   export const CarouselItems:CarouselItems[] = [
     {
       id:1,
@@ -241,7 +406,36 @@ export const paragraphs: Paragraph[] = [
     content: '114+ Students Placed Till now in the Academic Year 2019-20 with salary ...',
   },
 ];
-
+export interface faciliitiess {
+  id:string,
+  name:string,
+  imgurl:string,
+  href:string
+}
+export const faciliities:faciliitiess[] = [{
+  id:'1',
+  name:"Library",
+  imgurl:"/assets/facilities/libery.jpg",
+  href:"/facilities/library"
+},
+{
+  id:'2',
+  name:"Hostel",
+  imgurl:"/assets/facilities/hostel.jpg",
+  href:"/facilities/hostel"
+},
+{
+  id:'3',
+  name:"Cafeteria",
+  imgurl:"/assets/facilities/cafeteria.jpg",
+  href:"/facilities/cafteria"
+},
+{
+  id:'4',
+  name:"Sports",
+  imgurl:"/assets/facilities/sports.jpg",
+  href:"/facilities/sports"
+}]
 
 interface Mission {
   id: string;

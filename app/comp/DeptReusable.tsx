@@ -2,10 +2,10 @@ import React from 'react'
 import { dept } from '@/constants'
 import Image from 'next/image'
 import Reusable from './Reusable'
-const DeptReusable:React.FC<dept> = ({about,name,vision,mission,hod,imgurl,contact,email}) => {
+const DeptReusable:React.FC<dept> = ({about,name,vision,mission,hod,imgurl,contact,email,parent}) => {
   return (
     <div className=' flex-col justify-center items-center'>
-          <Reusable name={name}/>
+          <Reusable name={name} parent={parent}/>
     
     <Image src={imgurl} width={900} height={250} alt={name} className=' rounded-md shadow-lg shadow-muted-foreground relative mx-auto mt-32 ' />
 <div className='container rounded-2xl bg-primary-foreground '>

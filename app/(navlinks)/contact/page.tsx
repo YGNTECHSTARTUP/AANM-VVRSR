@@ -4,7 +4,7 @@ import Reusable from '@/app/comp/Reusable'
 const page = () => {
   return (
     <div>
-    <Reusable name="Contact"/>
+    <Reusable name="Contact" parent='/contact'/>
     </div>
   )
 }
