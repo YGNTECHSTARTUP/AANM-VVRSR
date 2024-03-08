@@ -7,6 +7,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 
 
 
+
 export const metadata: Metadata = {
   title: "AANM & VVRSR Polytechnic",
   description: "Best Polytechnic in Andhra Pradesh",

@@ -7,7 +7,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
-import {  achievements, departments, facilities } from '@/navigationconstants'
+import {  departments, facilities } from '@/navigationconstants'
 
 const Navlinks = () => {
   return (
@@ -27,7 +27,7 @@ const Navlinks = () => {
                     departments.map((item)=>(
                      
                         <DropdownMenuItem key={item.key}>
-                       <Link href={`${item.href}`}>
+                       <Link href={`${item.href}`} passHref legacyBehavior>
                        {item.label}
                        </Link>   
                           </DropdownMenuItem>
@@ -48,18 +48,7 @@ const Navlinks = () => {
                     }
                      </DropdownMenuContent>
                   
-                    </div>|| link.name === "ACHIEVEMENTS" && <div>
-                    <DropdownMenuContent side={'bottom'} align={'start'}>
-                    {
-                        achievements.map((item)=>(
-                          <DropdownMenuItem key={item.key}>{item.label}</DropdownMenuItem>
-                        
-                        ))
-                      
-                      }
-                    </DropdownMenuContent>
-                      
-                      </div> }
+                    </div> }
             </DropdownMenu>
      
             

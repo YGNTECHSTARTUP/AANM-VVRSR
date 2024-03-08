@@ -5,9 +5,10 @@ import Link from 'next/link'
 import React from 'react'
 interface ReusableProps {
   name:string
+  parent:string
     
 }
-const Reusable:React.FC<ReusableProps> = ({name}) => {
+const Reusable:React.FC<ReusableProps> = ({name,parent}) => {
   return (
     <div className='mx-auto'>
               <div className="relative mt-24 bg-[#0c4a6e] h-[40vh] container w-[100%] text-white">
@@ -22,7 +23,7 @@ const Reusable:React.FC<ReusableProps> = ({name}) => {
         <div className="relative z-10 flex flex-col  items-center justify-center space-y-6 py-16">
           <h1 className="text-6xl font-extrabold mt-24 ">{name}</h1>
        <Button className='bg-orange-500 '><Link href={"/"}>Home
-       </Link><span className='mx-2'>|</span>{name}</Button>
+       </Link><span className='mx-2'>|</span><Link href={parent}>{name}</Link></Button>
         </div>
       </div>
     </div>

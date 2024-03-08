@@ -5,7 +5,7 @@ import React from 'react'
 const page = () => {
   return (
     <div>
-        <Reusable name='About'/>
+        <Reusable name='About' parent='/about'/>
         <AboutCollage keys={"about"}/>
     </div>
   )
