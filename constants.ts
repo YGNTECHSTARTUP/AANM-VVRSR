@@ -31,8 +31,8 @@ interface NavLink {
     { key: 5, name: "PLACEMENTS", route: "/placements" },
     { key: 6, name: "GALLERY", route: "/gallery" },
     { key: 7, name: "ACHIEVEMENTS", route: "/achievements" },
-    { key: 8, name: "ALUMNI", route: "/alumni" },
-    { key: 9, name: "CONTACT", route: "/contact" },
+    { key: 8, name: "OURPROJECTS", route: "/" },
+    { key: 9, name: "CONTACT", route: "https://www.aanm-vvrsrpolytechnic.ac.in/contact.php" },
   ];
   interface Itmes  {
     id:number;
